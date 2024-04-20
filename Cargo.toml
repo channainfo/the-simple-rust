@@ -1,5 +1,5 @@
 [package]
-name = "action1"
+name = "rollapp"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 num = "0.4.1"
+regex = "1.10.4"
