@@ -12,3 +12,23 @@ cargo add num
 # copy crate doc to local
 cargo doc
 ```
+
+## Test
+
+To run test
+
+```sh
+# run all the test
+cargo test
+
+# run filtered test with name
+cargo test {name}
+
+# possible cargo test command option
+cargo test -- --help
+
+```
+
+## Ref
+
+- Test setup ( unit test and integration test) <https://doc.rust-lang.org/book/ch11-00-testing.html>
