@@ -1,8 +1,6 @@
-mod data_type;
-mod model;
-
-use crate::data_type::gender::Gender;
-use crate::model::user::User;
+use rollapp;
+use rollapp::data_type::gender::Gender;
+use rollapp::model::user::User;
 
 fn main() {
     let first_name = "joo";
@@ -11,9 +9,8 @@ fn main() {
     let gender: Gender = Gender::Female;
     let user = User::new(first_name, last_name, dob, gender);
 
-    println!("Application name: main");
+    println!("Application name: ext");
     println!("=================================");
-
     println!("User: {:?}", &user);
     println!("Hello {}!", user.full_name());
 }

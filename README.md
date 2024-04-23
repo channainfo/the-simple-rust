@@ -29,6 +29,27 @@ cargo test -- --help
 
 ```
 
+## Crates
+
+### Multiple binary crates
+
+Run a specific binary crate:
+
+```sh
+# bin/ext.rs is a binary crate
+cargo run --bin ext
+
+# run the main.rs, which is the rollapp default to the package_name
+cargo run --bin rollapp
+```
+
+### One lib crate
+
+we have both binaray and lib crates.
+
+- One and only one lib crate
+- Multiple binary crates
+
 ## Ref
 
 - Test setup ( unit test and integration test) <https://doc.rust-lang.org/book/ch11-00-testing.html>
