@@ -1,16 +1,16 @@
 use crate::data_type::gender::Gender;
 
 #[derive(Debug)]
-pub struct User<'a, 'b> {
+pub struct User<'a> {
     pub first_name: &'a str,
-    pub last_name: &'b str,
+    pub last_name: &'a str,
     pub dob: u32,
     pub gender: Gender,
 }
 
-impl<'a, 'b> User<'a, 'b> {
+impl<'a> User<'a> {
     #[allow(dead_code)]
-    pub fn new(first_name: &'a str, last_name: &'b str, dob: u32, gender: Gender) -> User<'a, 'b> {
+    pub fn new(first_name: &'a str, last_name: &'a str, dob: u32, gender: Gender) -> User<'a> {
         User {
             first_name: first_name,
             last_name: last_name,
@@ -20,7 +20,7 @@ impl<'a, 'b> User<'a, 'b> {
     }
 
     #[allow(dead_code)]
-    pub fn full_name(self: &User<'a, 'b>) -> String {
+    pub fn full_name(self: &User<'a>) -> String {
         let result = format!("{} {}", self.first_name, self.last_name);
         result
     }

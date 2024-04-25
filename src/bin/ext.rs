@@ -1,6 +1,4 @@
-use rollapp;
-use rollapp::data_type::gender::Gender;
-use rollapp::model::user::User;
+use rollapp::{self, data_type::gender::Gender, model::user::User};
 
 fn main() {
     let first_name = "joo";

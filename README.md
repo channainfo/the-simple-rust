@@ -53,3 +53,4 @@ we have both binaray and lib crates.
 ## Ref
 
 - Test setup ( unit test and integration test) <https://doc.rust-lang.org/book/ch11-00-testing.html>
+- Single vs Multitple lifetimes: <https://channaly.medium.com/single-versus-multiple-lifetimes-23e3f9cad251>
